@@ -35,7 +35,7 @@
           <div class="columns">
             <div class="tile is-parent" v-if="this.education.enable">
               <div class="tile is-child box">
-                <p class="title has-text-grey-dark">Education</p>
+                <p class="title has-text-grey-dark">{{this.education.label}}</p>
                 <p class="subtitle has-text-grey is-italic mb-1">
                   {{this.education.mainEdu}}
                 </p>
@@ -71,8 +71,6 @@
 </template>
 
 <script>
-// import { marked } from "marked";
-
 export default {
   name: "Hero",
   // mounted() {

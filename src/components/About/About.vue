@@ -39,7 +39,7 @@
       </div>
     </div>
 
-    <WorkExperience />
+    <WorkExperience v-bind:experience="this.experience" v-if="this.experience.enable"/>
   </section>
 </template>
 
@@ -50,9 +50,6 @@ export default {
   name: "About",
   components: {
     WorkExperience,
-  },
-  mounted() {
-    console.log(this.userData);
   },
   methods: {
     downloadCV() {
@@ -86,6 +83,9 @@ export default {
     cv() {
       return `${process.env.VUE_APP_API_URL}${this.about.CV.url}`;
     },
+    experience(){
+      return this.userData.experience;
+    }
   },
 };
 </script>

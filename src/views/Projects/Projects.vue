@@ -1,13 +1,16 @@
 <template>
-  <h1>Projects</h1>
+  <ProjectList />
 </template>
 
 <script>
+import ProjectList from "../../components/ProjectList/ProjectList.vue";
+
 export default {
-    
-}
+  components: {
+    ProjectList,
+  },
+};
 </script>
 
 <style lang="">
-    
 </style>
