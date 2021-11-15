@@ -19,13 +19,13 @@
                 <a v-if="this.socialAccount.Github !== null" 
                   v-bind:href="this.socialAccount.Github.link"
                   target="_blank"
-                  rel="noopener">
+                  rel="noopener noreferrer">
                   <i class="has-text-grey-dark is-size-5 fa fa-github mr-3"></i>
                 </a>
                 <a v-if="this.socialAccount.Linkedin !== null" 
                   v-bind:href="this.socialAccount.Linkedin.link"
                   target="_blank"
-                  rel="noopener">
+                  rel="noopener noreferrer">
                   <i class="has-text-grey-dark is-size-5 fa fa-linkedin mr-3"></i>
                 </a>
               </div>
@@ -73,9 +73,6 @@
 <script>
 export default {
   name: "Hero",
-  // mounted() {
-  //   console.log(this.userData)
-  // },
   computed: {
     userData() {
       return this.$store.state.userData;
@@ -94,8 +91,5 @@ export default {
 </script>
 
 <style lang="scss">
-#home {
-  padding-top: 250px;
-  height: 950px;
-}
+
 </style>

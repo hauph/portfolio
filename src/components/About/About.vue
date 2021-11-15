@@ -93,7 +93,6 @@ export default {
 <style lang="scss">
 #about {
   padding-top: 50px;
-  height: 900px;
 
   .scrollspy {
     align-items: center;

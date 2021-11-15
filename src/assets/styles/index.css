@@ -22,12 +22,17 @@
 .outer-border-image-lv1 {
   border: 20px solid rgba(0, 0, 0, 0.05);
   border-radius: 50%;
-  width: 70%;
 }
 
 .outer-border-image-lv2 {
   border: 20px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+}
+
+.outer-border-image-lv2 img {
+  object-fit: cover;
+  width: 380px;
+  height: 380px;
 }
 
 .outer-border-image-lv1 img {

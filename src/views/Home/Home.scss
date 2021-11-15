@@ -1,0 +1,35 @@
+#home {
+  position: relative;
+  height: 100vh;
+
+  .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    
+    .columns {
+      align-items: center;
+  
+      .image-container {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+
+  @media (max-width: 1024px) {
+    margin-top: 4.5rem;
+    height: 60vh;
+
+    .container { 
+        position: relative;
+
+        .column:nth-child(2) {
+          display: none;
+        }
+    }
+
+  }
+}

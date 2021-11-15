@@ -38,12 +38,30 @@ export default {
 };
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
-  margin-top: 60px;
+<style lang="scss">
+html {
+  &.no-scroll {
+    overflow: hidden;
+  }
+
+  #app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #2c3e50;
+    margin-top: 60px;
+  }
+}
+
+a:hover, a:focus {
+  color: var(--main-color) !important;
+
+  h1 {
+    color: var(--main-color) !important;
+  }
+}
+
+:root {
+  --main-color: #00d1b2;
 }
 </style>
