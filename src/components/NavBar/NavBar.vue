@@ -6,7 +6,7 @@
   >
     <div class="container">
       <div class="navbar-brand">
-        <router-link :to="{name: 'Home', path: '/'}" class="navbar-item">
+        <router-link :to="{name: 'Home', path: '/'}" class="navbar-item" @click="goTo">
           <span class="icon"><i class="fa fa-home fa-lg"></i></span>
           <h1 class="navbar-item has-text-weight-bold is-size-4">{{this.userName.toUpperCase()}}</h1>
         </router-link>
@@ -94,6 +94,16 @@ export default {
         font-size: 50px;
         text-align: center;
         width: 100%;
+        
+        a.router-link-active {
+          color: var(--main-color);
+        }
+      }
+    }
+
+    .navbar-end {
+      .router-link-active {
+        color: var(--main-color);
       }
     }
   }

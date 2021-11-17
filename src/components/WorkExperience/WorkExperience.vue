@@ -1,14 +1,12 @@
 <template>
     <div id="work-experience" class="container">
-        <div class="columns mt-6">
-            <div class="column">
-                <h3 class="has-text-centered has-text-grey-dark title">{{ this.experience.label }}</h3>
-            </div>
+        <div class="mt-6">
+            <h3 class="has-text-centered has-text-grey-dark title">{{ this.experience.label }}</h3>
         </div>
 
-        <div class="columns mt-6">
-            <div class="tile is-ancestor">
-                <div class="tile is-parent" v-for="item in this.ex" v-bind:key="item.id">
+        <div class="mt-6 is-multiline">
+            <div class="is-ancestor columns is-multiline">
+                <div class="tile is-parent column is-one-third-desktop is-half-tablet" v-for="item in this.ex" v-bind:key="item.id">
                     <article class="tile is-child box">
                         <figure class="image is-64x64">
                             <img v-bind:src="`${this.apiURL}${item.company_icon.url}`" alt="" />

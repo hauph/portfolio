@@ -1,5 +1,5 @@
 <template>
-  <section id="projects" class="section section-padding-top">
+  <section id="projects" class="section">
     <div class="container">
       <h1 class="title">
         <i class="fa fa-tasks"></i>{{ projectData.label }}
@@ -76,6 +76,7 @@ export default {
           
           figure {
             position: relative;
+            overflow: hidden;
 
             img {
               position: absolute;

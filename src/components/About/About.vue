@@ -1,7 +1,7 @@
 <template>
   <section id="about" class="section has-background-light">
     <div class="container scrollspy" v-if="this.about.enable">
-      <div class="columns">
+      <div class="columns is-desktop">
         <div class="column about__image">
           <img
             class="ab-img"
@@ -9,6 +9,23 @@
             alt="About image"
           />
         </div>
+
+        <div class="column about__profile-img">
+          <div class="image-container">
+            <div class="outer-border-image-lv1">
+              <div class="outer-border-image-lv2">
+                <figure class="image">
+                  <img
+                    class=""
+                    v-bind:src="this.profileImage"
+                    alt="Profile image"
+                  />
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="column about__info">
           <div class="tile is-parent">
             <div class="tile is-child box">
@@ -85,6 +102,9 @@ export default {
     },
     experience(){
       return this.userData.experience;
+    },
+    profileImage() {
+      return `${process.env.VUE_APP_API_URL}${this.userData.profileImage.url}`;
     }
   },
 };
@@ -99,6 +119,29 @@ export default {
 
     img {
       width: 100%;
+    }
+
+    .about__profile-img {
+      display: none;
+    }
+
+    @media (max-width: 1024px) {
+      .about__image {
+        display: none;
+      }
+
+      .about__profile-img {
+        display: block;
+
+        img {
+          width: 380px;
+          
+          @media (max-width: 500px) {
+            width: 200px; 
+            height: 200px ;
+          }
+        }
+      }
     }
 
     .about__info {
