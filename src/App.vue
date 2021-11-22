@@ -23,7 +23,6 @@ export default {
         return response.json();
       })
       .then(data => {
-        console.log(data)
         this.$store.commit('setUserData', data);
       })
       .catch(function (error) {
