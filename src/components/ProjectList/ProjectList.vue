@@ -45,7 +45,8 @@ export default {
   name: "ProjectList",
   data() {
     return {
-      apiURL: process.env.VUE_APP_API_URL,
+      apiURL: process.env.NODE_ENV === 'development ' ? process.env.VUE_APP_API_URL : '',
+      // apiURL: '',
     };
   },
   computed: {

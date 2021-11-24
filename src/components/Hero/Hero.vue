@@ -84,7 +84,8 @@ export default {
       return this.userData.education;
     },
     profileImage() {
-      return `${process.env.VUE_APP_API_URL}${this.userData.profileImage.url}`;
+      return process.env.NODE_ENV === 'development' ? `${process.env.VUE_APP_API_URL}${this.userData.profileImage.url}` : this.userData.profileImage.url;
+      // return this.userData.profileImage.url;
     }
   },
 };
