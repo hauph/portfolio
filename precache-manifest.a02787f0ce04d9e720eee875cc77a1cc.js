@@ -24,12 +24,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/js/index.5ada642b.js"
   },
   {
+    "revision": "0d8ad803359d8b71d578",
+    "url": "/portfolio/js/portfolio.f3baea1a.js"
+  },
+  {
     "revision": "a528a8d9fa3218b64329",
     "url": "/portfolio/js/projects.72a53b1e.js"
   },
   {
     "revision": "1770c2524b653c4741436956a1f7f256",
     "url": "/portfolio/manifest.json"
+  },
+  {
+    "revision": "813f4f69bcdb3e319a1b71a62afaa151",
+    "url": "/portfolio/portfolio.html"
   },
   {
     "revision": "0e61775ce3970f624fe98180a5226876",

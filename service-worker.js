@@ -1,4 +1,4 @@
-importScripts("/portfolio/precache-manifest.e833052583ab929c2b7e20f828caa12f.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
+importScripts("/portfolio/precache-manifest.a02787f0ce04d9e720eee875cc77a1cc.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts('swenv.js');
 
