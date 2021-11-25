@@ -6,7 +6,7 @@
       </h1>
 
       <div class="columns is-multiline">
-        <div v-for="item in this.projectData.projects" :key="item.id" class="column is-one-third-desktop is-half-tablet">
+        <div v-for="item in this.projectData.projects" :key="item.id" class="column is-one-quarter-desktop is-half-tablet">
           <div class="card">
             <div class="card-header">
               <div class="card-image">
