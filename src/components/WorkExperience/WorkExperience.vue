@@ -34,8 +34,8 @@ export default {
   data() {
     return {
       ex: this.experience.experience,
-      apiURL: process.env.NODE_ENV === 'development ' ? process.env.VUE_APP_API_URL : '',
-    //   apiURL: '',
+      apiURL: process.env.NODE_ENV === 'development' ? process.env.VUE_APP_API_URL : '',
+      // apiURL: '',
     };
   },
   props: {
