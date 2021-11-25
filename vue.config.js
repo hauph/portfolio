@@ -1,5 +1,5 @@
 module.exports = {
-  publicPath: process.env.NODE_ENV === 'production' ? '/portfolio/' : '/'
+  publicPath: process.env.NODE_ENV === 'production' ? '/portfolio/' : '/',
   pwa: {
     // configure the workbox plugin
     workboxPluginMode: "InjectManifest",
