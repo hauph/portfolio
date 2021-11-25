@@ -4,12 +4,12 @@ import Projects from "@/views/Projects/Projects.vue";
 
 const routes = [
   {
-    path: "/",
+    path: process.env.NODE_ENV === 'development' ? "/" : '/portfolio/',
     name: "Home",
     component: Home,
   },
   {
-    path: "/projects",
+    path: process.env.NODE_ENV === 'development' ? "/projects" : '/portfolio/projects',
     name: "Projects",
     component: Projects,
   },
