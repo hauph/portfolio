@@ -2,7 +2,7 @@
   <section id="projects" class="section">
     <div class="container">
       <h1 class="title">
-        <i class="fa fa-tasks"></i>{{ projectData.label }}
+        <i style="margin-right: 10px;" class="fa fa-tasks"></i>{{ projectData.label }}
       </h1>
 
       <div class="columns is-multiline">
